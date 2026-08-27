@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SAM Incorporated | Business Solutions</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">SAM Incorporated</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Building Better Business Solutions</h1>
+
+                <p>
+                    SAM Incorporated provides reliable, professional
+                    solutions designed to help businesses grow.
+                </p>
+
+                <a href="contact.html" class="button">
+                    Get Started
+                </a>
+            </div>
+        </section>
+
+        <section class="about-preview">
+            <h2>About SAM Incorporated</h2>
+
+            <p>
+                We are committed to delivering quality service,
+                innovative solutions, and long-term value to our
+                customers.
+            </p>
+
+            <a href="about.html">Learn More →</a>
+        </section>
+
+        <section class="services">
+            <h2>Our Services</h2>
+
+            <div class="service-grid">
+
+                <div class="service-card">
+                    <h3>Consulting</h3>
+                    <p>
+                        Professional advice to help your organization
+                        make better business decisions.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Business Solutions</h3>
+                    <p>
+                        Practical solutions designed around your
+                        organization's goals.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Support</h3>
+                    <p>
+                        Dependable ongoing support for your business.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Ready to Work With Us?</h2>
+
+            <p>
+                Contact SAM Incorporated to discuss your needs.
+            </p>
+
+            <a href="contact.html" class="button">
+                Contact Us
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 SAM Incorporated. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #0b1f3a;
+}
+
+.logo {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background: linear-gradient(
+        135deg,
+        #0b1f3a,
+        #1769aa
+    );
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #f5b700;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.about-preview,
+.services,
+.cta {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.about-preview {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-preview h2,
+.services h2,
+.cta h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.about-preview p {
+    margin-bottom: 20px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.service-card {
+    padding: 35px;
+    background: #f5f7fa;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+}
+
+.cta {
+    background: #0b1f3a;
+    color: white;
+}
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #071426;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+}
+
+console.log("SAM Incorporated website loaded.");
